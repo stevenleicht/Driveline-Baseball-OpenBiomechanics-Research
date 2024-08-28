@@ -16,7 +16,7 @@ head(cmj_data)
 
 #Selecting the data I want to analyze:
 selected_data = cmj_data %>%
-  select(bat_speed_mph, peak_power_.w._mean_cmj,
+  dplyr::select(bat_speed_mph, peak_power_.w._mean_cmj,
          concentric_peak_force_.n._mean_cmj, eccentric_peak_force_.n._mean_cmj, body_weight_.lbs.)
 print(head(selected_data))
 
